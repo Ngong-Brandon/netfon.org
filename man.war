@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NETFON.com</title>
+<link rel="stylesheet" href="../fon.css/main.css">
+</head>
+<body>
+    <div class="header" >
+    <div class="hstyle">
+        <div class="hanimae" >NETFON</div>
+        <img src="brandon.jpg" alt="content" width="100%" height="100%" 
+        style="border-radius: 0px 0px 50px 50px;">
+    </div>
+    </div>
+    <span class="menu" onclick="opennav()" >&#9776;Menu</span>
+
+    <div class="navbar" id="nav" >
+        <a href="#">HOME</a>
+        <a href="#">Movies</a> 
+        <a href="#">Music</a> 
+        <a href="#">Videos</a> 
+        <a href="#">More</a> 
+
+
+<input type="search" class="search"  placeholder="Search..." >
+
+</div>
+
+
+<div class="hidenav-overlay" id="overlay">
+<a  class="void0" onclick="closenav()" href = "javascript:void(0)"  >&times;</a>
+<div class="overlay-content">
+        <a href="#">HOME</a>
+        <a href="#">Movies</a> 
+        <a href="#">Music</a> 
+        <a href="#">Videos</a> 
+        <a href="#">More</a> 
+</div>
+</div>
+
+<p><figure>
+    Watch and download movies,series,audio and video tracks by your favourate
+    artist only on <a href="index.html" style="text-decoration: none;">NETFON.com</a>
+    .Come and download quality movies with good graphics.
+</figure></p>
+
+<input type="password" name="password"  placeholder="password" id="pass">
+
+<input type="checkbox" onclick="viewpass()"><b id="inner">Show password</b>
+
+<video width="100%" controls>
+    <source src="adams.mp4" type="video/mp4">
+</video>
+<p><figure>BLACK ADAMS download now <a class="download" href="index.html" download="adams.mp4">
+    download</a> </figure></p>
+<video width="100%" controls>
+    <source src="myvid.mp4" type="video/mp4">
+</video>
+
+
+<script src="main.js" ></script>
+</body>
+</html>

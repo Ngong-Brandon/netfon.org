@@ -1,0 +1,274 @@
+
+
+body{
+       margin: 0px;
+}
+
+.header{
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(47, 47, 109);
+}
+.hstyle{
+    text-align: center;
+    top: 2px;
+    left: 15%;
+    display: block;
+    background-color: rgb(139, 75, 243);
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    transform:rotateZ(50deg);
+    border-radius: 0px 50px 50px 50px;
+    box-shadow: 0px 8px 8px  rgb(145, 145, 46);
+
+}
+
+
+
+.void0{
+    cursor: pointer; 
+    font-size:50px; 
+    text-decoration: none; 
+    color: white;
+}
+
+.void0:hover{
+    opacity: 0.7;
+}
+
+.hanimae{
+
+    font-weight: bold;
+    font-family: forte;
+    font-size: 40px;
+    position: absolute;
+    color: yellow;
+    transform: rotate(-50deg);
+    top:50%;
+    left: 50%;  
+    cursor: pointer;  
+
+}
+
+.hanimae:hover{
+   
+    transform: rotate(310deg);
+    transition: 2s;
+}
+
+.navbar{
+    overflow: hidden;
+    background: url("brandon.jpg");
+    box-shadow: 8px 8px 8px rgb(48, 53, 134);
+    display: block;
+
+
+}
+
+.sticky{
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+.signup{
+
+    border-radius: 25px;
+    padding: 14px 12px;
+    background-color: transparent;
+    border: 3px solid yellow;
+    position: absolute;
+    top:10px;
+    left:70%;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login{
+
+    border-radius: 25px;
+    padding: 14px 16px;
+    background-color: transparent;
+    border: 3px solid yellow;
+    position: absolute;
+    top:10px;
+    left:80%;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+.login:hover, .signup:hover{
+    opacity: 0.5;
+}
+
+.navbar a{
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 18px 15px;
+    float: left;
+    font-family: sans-serif;
+    
+
+}
+
+.navbar a:hover{
+    color: rgb(230, 252, 39);
+    border-bottom: 4px solid rgb(35, 32, 207);
+    
+
+}
+@media screen and (max-width:400px){
+    .navbar a, .navbar a:hover{
+       display: none;
+    }
+    .hanimae{
+        font-size: 35px;
+    }
+    .hstyle{
+        left: 10%;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .signup {
+        padding: 8px 6px;
+        font-size: 12px;
+    }
+    .login{
+        top:60px;
+        padding: 8px 10px;
+        left:70%;
+        font-size: 12px;
+
+
+    }
+    
+     
+    
+    
+}
+@media screen and (max-width:780px){
+    .login{
+        left:70%;
+        top:70px;
+    }
+}
+
+.menu{
+    cursor: pointer; 
+    font-size:30px; 
+    color:rgb(31, 31, 112);
+}
+.search{
+    padding: 12px 8px;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 25px;
+    box-shadow: 7px 7px 7px rgb(213, 245, 34);
+    float: left;
+    color: #fff;
+
+}
+
+
+.hidenav-overlay{
+    overflow-x: hidden;
+    z-index: 1;
+    width: 0%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background-color: rgb(63, 62, 62);
+    transition: 0.8s;
+    
+    
+}
+.overlay-content{
+    background: transparent;
+}
+
+.overlay-content a{
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 25px;
+    color: rgb(199, 230, 25);
+    display: block;
+    text-align: center;
+    padding: 16px 14px;
+    float: left;
+    font-family: sans-serif;
+    width: 100%;
+    
+
+
+}
+@media screen and (max-width:230px){
+    .overlay-content a{
+        text-align: left;
+        margin-left: 0px;
+    }
+    
+}
+
+.overlay-content a:hover{
+  background-color: rgb(39, 39, 87);
+}
+.overlay-content a:active{
+    color:rgb(36, 36, 255)
+}
+
+.hback{
+    top:0px;
+    left:0px;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    
+}
+input[type=text],
+input[type=password],
+ input[type=password],
+  input[type=email]
+  {
+    background-color: rgb(237, 243, 243);
+    border-radius: 7px;
+    font-size: 13px;
+    padding: 7px;
+    width: 60%;
+    border: 0px;
+    margin-left: 9px;
+  }
+  select{
+    background-color: rgb(231, 240, 240);
+    border-radius: 7px;
+    font-size: 13px;
+    padding: 7px;
+    border: 0px;
+    margin-left: 9px;
+
+  }
+  form{
+    margin-left: 7px;
+    font-size: 20px;
+  }
+  input[type = submit]{
+    border-radius: 10px;
+    color: white;
+    padding: 16px 10px;
+    background-color: rgb(53, 53, 209);
+    border: 0px;
+  }
+  input[type = submit]:hover{
+    opacity: 0.8;
+  }
